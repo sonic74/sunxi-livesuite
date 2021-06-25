@@ -13,6 +13,8 @@ else
 	exit
 fi
 
+modprobe awusb
+
 echo "Starting ${BIN_DIR}/${APP}."
 echo ""
 

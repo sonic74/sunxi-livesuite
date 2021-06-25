@@ -26,7 +26,10 @@
 
 #include <linux/module.h>
 #include <linux/kernel.h>
-#include <linux/signal.h>
+#include <linux/version.h>
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(4, 11, 0)
+#include <linux/sched/signal.h>
+#endif
 #include <linux/sched.h>
 #include <linux/hardirq.h>     //<linux/smp_lock.h>
 #include <linux/errno.h>
