@@ -17,6 +17,15 @@ First you need to install dkms on your system.
 On a debian or ubuntu this is as simple as (as root):
 # apt-get install dkms
 
+-----------------------------
+Optional: since ubuntu 18 libpng12 is no longer available in the Ubuntu repository archives and needs to be added manually.
+https://www.linuxuprising.com/2018/05/fix-libpng12-0-missing-in-ubuntu-1804.html
+
+# add-apt-repository ppa:linuxuprising/libpng12
+# apt update
+# apt install libpng12-0
+-----------------------------
+
 You can then descend into the awusb/ directory and just run:
 > make
 
